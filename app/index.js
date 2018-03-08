@@ -5,7 +5,7 @@ require('./index.css');
 const App = (props) => {
   return (
     <div>
-      <h1>Hello World!</h1>
+      'Alexa, what's the weather today?'
     </div>
   )
 }
