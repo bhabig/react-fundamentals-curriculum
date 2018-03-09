@@ -1,14 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 require('./index.css');
-
-const App = (props) => {
-  return (
-    <div>
-      'Alexa, what's the weather today?'
-    </div>
-  )
-}
+import App from './components/App';
 
 ReactDOM.render(
   <App />,

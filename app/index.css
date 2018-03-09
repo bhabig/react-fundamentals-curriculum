@@ -1,9 +1,101 @@
 body {
-  background-color: darkslategrey;
-  color: salmon;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  color: darkblue;
   text-align: center;
   align-content: center;
-  margin: 20%;
   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+}
+
+#alexa {
   font-size: 50px;
+}
+
+#home {
+  margin: 10%;
+}
+
+#header {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  height: 115px;
+  vertical-align: middle;
+  line-height: 115px;
+  background-color: darkblue;
+}
+
+#img {
+  float: left;
+  margin: 0;
+  width: 25%;
+  text-align: left;
+}
+
+#search {
+  vertical-align: middle;
+  line-height: 115px;
+  text-align: left;
+  float: right;
+  margin: 0;
+  width: 25%;
+}
+
+#p {
+  vertical-align: middle;
+  line-height: 115px;
+  text-align: middle;
+  float: left;
+  margin: 0;
+  width: 50%;
+}
+
+#search-form {
+  text-align: right;
+  vertical-align: middle;
+  margin-right: 10%;
+  line-height: 115px;
+}
+
+#submit {
+  border-radius: 0 5px 5px 0;
+  width: 90px;
+  height: 45px;
+  background-color: white;
+  font-size: 15px;
+  font-weight: bold;
+  color: darkblue;
+  border:none;
+  cursor: pointer;
+  margin-left: 2%;
+  text-align: center;
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  
+}
+
+#text-entry {
+  border-radius: 5px 0 0 5px;
+  width: 200px;
+  height: 43.5px;
+  border:none;
+  margin-left: 2%;
+  padding-left: 5px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+
+img {
+  height: 117px;
+  width: 117px;
+}
+
+#p p {
+  margin: 0;
 }
