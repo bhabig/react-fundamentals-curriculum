@@ -21,8 +21,6 @@ body {
   padding: 0;
   width: 100%;
   color: white;
-  font-size: 40px;
-  font-weight: bold;
   height: 115px;
   vertical-align: middle;
   line-height: 115px;
@@ -32,17 +30,34 @@ body {
 #img {
   float: left;
   margin: 0;
-  width: 25%;
+  width: 40%;
   text-align: left;
+  font-size: 35px;
+   vertical-align: middle;
+  line-height: 115px;
+  text-align: middle;
+}
+
+#img p {
+  margin-left: 20px;
+  float: right;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  color: 	#6A94FF;
+  padding-right: 70px;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
 }
 
 #search {
   vertical-align: middle;
   line-height: 115px;
-  text-align: left;
+  text-align: center;
   float: right;
   margin: 0;
-  width: 25%;
+  width: 30%;
 }
 
 #p {
@@ -51,18 +66,28 @@ body {
   text-align: middle;
   float: left;
   margin: 0;
-  width: 50%;
+  width: 30%;
 }
 
 #search-form {
-  text-align: right;
+  text-align: center;
   vertical-align: middle;
-  margin-right: 10%;
   line-height: 115px;
+  padding-top: 0px;
+  width: 250px;
+  align-content: center;
+  margin-left: 40px;
+  padding-left: 40px;
+}
+
+#search-form form {
+  vertical-align: middle;
+  line-height: 115px;
+  display: inline-flex;
 }
 
 #submit {
-  border-radius: 0 5px 5px 0;
+  /* border-radius: 0 5px 5px 0;
   width: 90px;
   height: 45px;
   background-color: white;
@@ -75,27 +100,70 @@ body {
   text-align: center;
   padding: 0;
   margin-bottom: 0;
-  margin-top: 0;
+  margin-top: 0; */
+  text-rendering: auto;
+  cursor: pointer;
+  background-color: #6A94FF;
   
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  text-align: start;
+  height: 20.25px;
+  width: 20.25px;
+  margin: 0;
+  padding: 10.25px 12px 10.25px 10px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+}
+
+#submit:focus {
+  text-decoration: none;
+  outline: none;
 }
 
 #text-entry {
-  border-radius: 5px 0 0 5px;
+  /* border-radius: 5px 0 0 5px;
   width: 200px;
   height: 43.5px;
   border:none;
   margin-left: 2%;
   padding-left: 5px;
   margin-bottom: 0;
-  margin-top: 0;
+  margin-top: 0; */
+  text-rendering: auto;
+  color: initial;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  text-align: start;
+  margin-right: -20px;
+  width: 200px;
+  height: 40px;
+  padding: 0em;
+  margin: 0;
+  border-radius: 5px 0 0 5px;
+  
+  border: none;
+  padding-left: 10px;
+}
+
+#text-entry:focus {
+  outline: none;
 }
 
 
-img {
+#img img {
   height: 117px;
   width: 117px;
+  display: inline-flex;
 }
 
 #p p {
   margin: 0;
+  font-size: 35px;
 }

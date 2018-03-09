@@ -6,9 +6,10 @@ const Header = (props) => {
     <div id="header">
       <div id="img">
         <img src="/app/images/slight_drizzle.png" alt="thermometer" />
+        <p>What's The Weather?</p>
       </div>
       <div id="p">
-        <p>What's The Weather?</p>
+        <p></p>
       </div>
       <div id="search">
         <SearchForm />

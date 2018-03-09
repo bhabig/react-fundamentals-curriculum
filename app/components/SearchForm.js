@@ -6,7 +6,7 @@ export default class SearchForm extends React.Component {
       <div id="search-form">
         <form>
           <input id="text-entry" type="text" placeholder="City, State or Zip..." />
-          <button id="submit">Ask Alexa</button>
+          <input id="submit" type="image" src="/app/images/mag.png"/>
         </form>
       </div>
     )
