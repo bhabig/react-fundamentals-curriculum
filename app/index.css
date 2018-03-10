@@ -1,8 +1,8 @@
 body {
-  background-color: white;
+  background-color: rgb(232, 234, 240);
   margin: 0;
   padding: 0;
-  color: darkblue;
+  color: rgb(70, 78, 85);
   text-align: center;
   align-content: center;
   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
@@ -18,10 +18,10 @@ body {
   padding-bottom: 55px;
   max-width: 40%;
   margin: 0  auto 70px;
-  border: 5px solid darkblue;
+  border: 5px solid #6A94FF;
   text-align: center;
-  color: #FFCC01;
-  background:	#6A94FF;
+  color: #6A94FF;
+  background:	rgb(70, 78, 85);
   -webkit-border-top-left-radius: 240px 190px;
   -webkit-border-top-right-radius: 240px 190px;
   -webkit-border-bottom-right-radius: 240px 190px;
@@ -38,7 +38,7 @@ body {
   right: 100px;
   width: 50px;
   height: 50px;
-  border: 5px solid 	darkblue;
+  border: 5px solid	#6A94FF;
   background: 	#6A94FF;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -54,7 +54,7 @@ body {
   right: 50px;
   width: 25px;
   height: 25px;
-  border: 5px solid darkblue;
+  border: 5px solid #6A94FF;
   background: 	#6A94FF;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
@@ -66,9 +66,18 @@ body {
   margin: 2%;
 }
 
-#home-text {
+#home-text1 {
+  
+  font-size: large;
+  letter-spacing: 5px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#home-text2 {
   font-weight: bold;
   font-size: large;
+  letter-spacing: 2px;
   margin-bottom: 0;
   padding-bottom: 0;
 }
@@ -81,7 +90,7 @@ body {
   height: 115px;
   vertical-align: middle;
   line-height: 115px;
-  background-color: darkblue;
+  background-color: rgb(70, 78, 85);
 }
 
 #img {
@@ -100,7 +109,7 @@ body {
   float: right;
   padding-top: 0em;
   padding-bottom: 0em;
-  color: 	#6A94FF;
+  color: 	#FFCC01;
   padding-right: 70px;
   -webkit-margin-before: 0em;
   -webkit-margin-after: 0em;
@@ -170,7 +179,7 @@ body {
   margin-top: 0; */
   text-rendering: auto;
   cursor: pointer;
-  background-color: #6A94FF;
+  background-color: #FFCC01;
   
   letter-spacing: normal;
   word-spacing: normal;
@@ -182,7 +191,7 @@ body {
   width: 20.25px;
   margin: 0;
   padding: 10.25px 12px 10.25px 10px;
-  border: none;
+  border: 1.5px solid #FFCC01;
   border-radius: 0 5px 5px 0;
 }
 
@@ -201,7 +210,8 @@ body {
   margin-bottom: 0;
   margin-top: 0; */
   text-rendering: auto;
-  color: initial;
+  color: rgb(70, 78, 85);
+  font-size: 16px;
   letter-spacing: normal;
   word-spacing: normal;
   text-transform: none;
@@ -215,19 +225,19 @@ body {
   margin: 0;
   border-radius: 5px 0 0 5px;
   
-  border: none;
+  border: 2px solid #FFCC01;
   padding-left: 10px;
 }
 
 #home-search #text-entry {
-  background-color: whitesmoke;
-  border: 1.5px solid darkblue;
+  background-color: white;
+  border: 1.5px solid #6A94FF;
   width: 300px;
 }
 
 #home-search #submit {
-  border: 1px solid darkblue;
-  background-color: darkblue;
+  border: 1px solid #6A94FF;
+  background-color: #6A94FF;
 }
 
 #text-entry:focus {
