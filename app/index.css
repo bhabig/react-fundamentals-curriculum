@@ -9,11 +9,68 @@ body {
 }
 
 #alexa {
-  font-size: 50px;
+  vertical-align: top;
+  font-size: 30px;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  max-width: 40%;
+  margin: 0  auto 70px;
+  border: 5px solid darkblue;
+  text-align: center;
+  color: #FFCC01;
+  background:	#6A94FF;
+  -webkit-border-top-left-radius: 240px 190px;
+  -webkit-border-top-right-radius: 240px 190px;
+  -webkit-border-bottom-right-radius: 240px 190px;
+  -webkit-border-bottom-left-radius: 240px 190px;
+  -moz-border-radius: 240px / 190px;
+  border-radius: 240px / 190px;
+}
+
+#alexa:before {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  bottom: -40px;
+  right: 100px;
+  width: 50px;
+  height: 50px;
+  border: 5px solid 	darkblue;
+  background: 	#6A94FF;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 100px;
+  display: block;
+}
+
+#alexa:after {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  bottom: -60px;
+  right: 50px;
+  width: 25px;
+  height: 25px;
+  border: 5px solid darkblue;
+  background: 	#6A94FF;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 100px;
+  display: block;
 }
 
 #home {
-  margin: 10%;
+  margin: 2%;
+}
+
+#home-text {
+  font-weight: bold;
+  font-size: large;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 #header {
@@ -60,6 +117,15 @@ body {
   width: 30%;
 }
 
+#home-search {
+  text-align: center;
+  vertical-align: middle;
+  margin-right:14%;
+  align-content: center;
+  position: relative;
+  display: inline-block;
+}
+
 #p {
   vertical-align: middle;
   line-height: 115px;
@@ -81,6 +147,7 @@ body {
 }
 
 #search-form form {
+  align-content: center;
   vertical-align: middle;
   line-height: 115px;
   display: inline-flex;
@@ -150,6 +217,17 @@ body {
   
   border: none;
   padding-left: 10px;
+}
+
+#home-search #text-entry {
+  background-color: whitesmoke;
+  border: 1.5px solid darkblue;
+  width: 300px;
+}
+
+#home-search #submit {
+  border: 1px solid darkblue;
+  background-color: darkblue;
 }
 
 #text-entry:focus {
