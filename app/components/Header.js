@@ -14,7 +14,7 @@ const Header = (props) => {
         <p></p>
       </div>
       <div id="search">
-        <SearchForm />
+        <SearchForm onSubmit={props.onSubmit} />
       </div>
     </div>
   )
