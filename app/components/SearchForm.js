@@ -1,7 +1,8 @@
 'use strict';
 
 import React from 'react';
-import { Redirect } from 'react-router'
+// import Router from 'next/router';
+import { Router, Redirect } from 'react-router';
 
 export default class SearchForm extends React.Component {
   constructor(props) {
@@ -14,6 +15,7 @@ export default class SearchForm extends React.Component {
     }
     this.handleChange = this.handleChange.bind(this);
     this.formatLocation = this.formatLocation.bind(this);
+    this.resetState = this.resetState.bind(this);
   }
 
   handleChange(e) {
@@ -35,6 +37,16 @@ export default class SearchForm extends React.Component {
         city: currentCity,
         region: currentCountry
       }
+    }, this.resetState)
+  }
+
+  resetState() {
+    this.setState(() => {
+      return {
+        location: '',
+        city: '',
+        region: ''
+      }
     })
   }
 
@@ -42,11 +54,11 @@ export default class SearchForm extends React.Component {
     return (
       <div id="search-form">
         <form onSubmit={this.formatLocation}>
-          <input 
+          <input
             id="text-entry"
-            type="text" 
-            placeholder="City, State (if US) or Country (if int'l)" 
-            onChange={this.handleChange} 
+            type="text"
+            placeholder="City, State (if US) or Country (if int'l)"
+            onChange={this.handleChange}
           />
           <input
             id="submit"
@@ -54,6 +66,7 @@ export default class SearchForm extends React.Component {
             src="/app/images/mag.png"
           />
         </form>
+        {/* only redirect when form is submitted somehow */}
         {(this.state.city !== '' && this.state.region !== '') &&
           <Redirect to={{
             pathname: '/forecast',

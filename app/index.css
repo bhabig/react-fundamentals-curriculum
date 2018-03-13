@@ -66,22 +66,23 @@ body {
   width: 20%;
   display: inline-flex;
   float: left;
-  margin-top: 5%;
+  margin-top: 2.5%;
   height: auto;
-  margin-left: 10%;
+  margin-left: 7.5%;
+  margin-right: 2.5%;
 }
 
 #current-weather {
   text-align: center;
   vertical-align: middle;
-  float: right;
-  width: 42.5%;
+  float: left;
+  width: 46%;
   height: auto;
   background-color: rgb(70, 78, 85);
   color: rgb(232, 234, 240);
   border: 3.5px solid #6A94FF;
   border-radius: 10px;
-  margin-top: 5%;
+  margin-top: 3.5%;
   align-content: center;
   display: inline-flex;
   margin-right: 22.5%;
@@ -98,7 +99,7 @@ body {
 }
 
 #home-text1 {
-  
+
   font-size: large;
   letter-spacing: 5px;
   margin-bottom: 0;
@@ -212,7 +213,7 @@ body {
   text-rendering: auto;
   cursor: pointer;
   background-color: #FFCC01;
-  
+
   letter-spacing: normal;
   word-spacing: normal;
   text-transform: none;
@@ -256,7 +257,7 @@ body {
   padding: 0em;
   margin: 0;
   border-radius: 5px 0 0 5px;
-  
+
   border: 2px solid #FFCC01;
   padding-left: 10px;
 }

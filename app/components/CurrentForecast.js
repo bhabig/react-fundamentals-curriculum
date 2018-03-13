@@ -1,3 +1,5 @@
+'use strict';
+
 import React from 'react';
 import PropTypes from 'prop-types';
 import api from '../utils/api';
@@ -14,7 +16,7 @@ const ForecastContent = (props) => {
   return (
     <div id="current-weather">
       <h1><img src={"/app/images/weather-icons/" + props.data.weather[0].icon + ".svg"} alt="" /></h1>
-      <p>{"[     Longitude: " + props.data.coord.lon + ', Latitude: ' + props.data.coord.lat + "     ]"}</p>
+      <p>{"Longitude: " + props.data.coord.lon + ', Latitude: ' + props.data.coord.lat}</p>
       <table>
 
       </table>
@@ -25,12 +27,12 @@ const ForecastContent = (props) => {
 export default class CurrentForecast extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {
       city: '',
       region: '',
       weatherSymbol: '',
-      updateCount: 0
+      updateCount: 0,
+      onRender: null
     }
   }
 
@@ -74,7 +76,7 @@ export default class CurrentForecast extends React.Component {
         })
       })
   }
-
+  //can import queryString to parse instead
   convertPropsToLocation(props) {
     let arr = props.history.location.search.split('&');
     let city = arr[0].split('=')[1];
