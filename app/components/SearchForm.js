@@ -1,8 +1,7 @@
 'use strict';
 
 import React from 'react';
-// import Router from 'next/router';
-import { Router, Redirect } from 'react-router';
+import { Redirect } from 'react-router';
 
 export default class SearchForm extends React.Component {
   constructor(props) {
