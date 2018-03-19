@@ -4,7 +4,6 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './Home';
 import CurrentForecast from './CurrentForecast';
-//import SingleDay from './SingleDay';
 import FiveDay from './FiveDay';
 import Header from './Header';
 
@@ -15,7 +14,7 @@ const App = (props) => {
         <Header />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/forecast" component={CurrentForecast} />
+          <Route exact path="/forecast" component={CurrentForecast} />
           <Route path="/forecast/:location/five-day" component={FiveDay} />
           <Route render={() => {
             return (

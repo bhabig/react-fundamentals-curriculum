@@ -69,7 +69,7 @@ export default class SearchForm extends React.Component {
         {(this.state.city !== '' && this.state.region !== '') &&
           <Redirect to={{
             pathname: '/forecast',
-            search: `?city=${this.state.city}&region=${this.state.region}`
+            search: `?city=${this.state.city}&region=${this.state.region}&units=imperial`
           }} />
         }
       </div>

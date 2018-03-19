@@ -7,7 +7,7 @@ export default class FiveDay extends React.Component {
   render() {
     return (
       <div>
-        {this.props.location}
+        You made it
       </div>
     )
   }

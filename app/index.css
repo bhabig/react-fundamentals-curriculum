@@ -6,6 +6,11 @@ body {
   text-align: center;
   align-content: center;
   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+  text-align-last: center;
+}
+
+ul {
+  list-style-type: none;
 }
 
 #alexa {
@@ -63,35 +68,103 @@ body {
 }
 
 #current-sidebar {
-  width: 20%;
+  width: 22.5%;
   display: inline-flex;
   float: left;
   margin-top: 2.5%;
   height: auto;
-  margin-left: 7.5%;
-  margin-right: 2.5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  min-height: 400px;
+  border-radius: 10px 10px 10px 10px;
+  margin-top: 3.5%;
+  align-content: center;
+  vertical-align: middle;
+}
+
+#current-sidebar #title {
+  font-weight: bold;
+  width: 22.5%;
+  min-height: 75px;
+  position: absolute;
+  font-size: 22.5px;
+  background-color: rgb(70, 78, 85);
+  color: rgb(232, 234, 240);
+  border-radius: 10px 10px 0 0;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  padding-bottom: 1.5%;
+  padding-top: .75%;
+  align-content: center;
+  border: 2px solid rgb(70, 78, 85);
+  vertical-align: middle;
+}
+
+#current-sidebar a{
+  color: rgb(70, 78, 85);
+  text-decoration: none;
+}
+
+#current-sidebar a:focus {
+  color: #6A94FF;
+  text-decoration: none;
+}
+
+#current-sidebar a:hover {
+  color: #6A94FF;
+  text-decoration: none;
+}
+/* 
+#current-sidebar a:visited {
+  color: rgb(70, 78, 85);
+  text-decoration: none;
+} */
+
+#sidebar-body {
+  width: 22.5%;
+  min-height: 100px;
+  position: absolute;
+  color: rgb(70, 78, 85);
+  background-color: rgb(232, 234, 240);
+  border: 2px solid rgb(70, 78, 85);
+  border-radius: 0 0 10px 10px;
+  padding: 1.5%;
+  align-content: center;
+  margin-top: 75px;
 }
 
 #current-weather {
   text-align: center;
   vertical-align: middle;
   float: left;
-  width: 46%;
+  width: 50%;
   height: auto;
   background-color: rgb(70, 78, 85);
   color: rgb(232, 234, 240);
-  border: 3.5px solid #6A94FF;
+  border: 2.5px solid #83A5B3;
   border-radius: 10px;
   margin-top: 3.5%;
   align-content: center;
-  display: inline-flex;
-  margin-right: 22.5%;
+  /* display: inline-flex; */
+  margin-right: 10.5%;
+  margin-bottom: 5%;
 }
 
 #current-weather img {
-  height: 150px;
-  width: 200px;
-  display: block;
+  height: 125px;
+  width: 187.5px;
+}
+
+#current-weather h1 {
+  margin-right: 30%;
+  font-size: 55px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  /* margin-right: 55%; */
+}
+
+#current-weather p {
+  font-size: 22px;
 }
 
 #home {
@@ -99,7 +172,6 @@ body {
 }
 
 #home-text1 {
-
   font-size: large;
   letter-spacing: 5px;
   margin-bottom: 0;
@@ -299,4 +371,76 @@ body {
 #p p {
   margin: 0;
   font-size: 35px;
+}
+
+/* table {
+    border-collapse: collapse;
+    width: 100%;
+    align-content: center;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-flex;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+tbody {
+  align-content: center;
+  text-align: center;
+  vertical-align: middle;
+   display: inline-flex;
+}
+
+td {
+    text-align: left;
+    padding: 8px;
+    display: inline-flex;
+    width: 100%;
+}
+
+tr:nth-child(even){background-color: lightgray;}
+tr:nth-child(odd){background-color: darkgrey;}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+} */
+
+table {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 4%;
+    border-collapse: collapse;
+    width: 80%;
+    text-align: left;
+}
+
+th, td {
+  text-align: left;
+  align-content: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 8px;
+  margin: 0 auto;
+}
+
+tr:nth-child(even){
+  background-color: rgb(90, 98, 105);
+}
+
+td:nth-child(odd){
+  font-weight: bold;
+}
+
+tr {
+  margin: 0 auto;
+  border-bottom: 1px solid #83A5B3;
+}
+
+thead {
+    background-color: #83A5B3;
+    border-bottom: 1px solid #83A5B3;
+    border-top: 1px solid #83A5B3;
+    color: white;
+    font-weight: bold;
 }
