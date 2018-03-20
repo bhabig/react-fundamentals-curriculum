@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Redirect } from 'react-router';
+import mag from '../img/mag.png';
 
 export default class SearchForm extends React.Component {
   constructor(props) {
@@ -62,7 +63,7 @@ export default class SearchForm extends React.Component {
           <input
             id="submit"
             type="image"
-            src="/app/public/images/mag.png"
+            src={mag}
           />
         </form>
         {/* only redirect when form is submitted somehow */}

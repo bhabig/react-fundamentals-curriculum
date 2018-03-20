@@ -5,12 +5,12 @@ import PropTypes from 'prop-types';
 import api from '../utils/api';
 const Link = require('react-router-dom').Link;
 import Sidebar from './Sidebar';
+import img from '../utils/img';
 
 const SingleDay = props => {
-  console.log(props)
   return (
       <tr>
-        <td><img style={{height: "30px", width: "45px"}}src={"../images/weather-icons/" + props.data.weather[0].icon + ".svg"} alt=""/></td>
+        <td><img style={{height: "30px", width: "45px"}}src={img[props.data.weather[0].icon]} alt=""/></td>
       <td>{new Date(props.data.dt * 1000).toString().split(' ').slice(0,5).join(' ')}</td>
         <td>{props.data.weather[0].description}</td>
         <td>{Math.round(props.data.main.temp * 1)} °F</td>

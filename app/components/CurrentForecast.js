@@ -5,32 +5,7 @@ import PropTypes from 'prop-types';
 import api from '../utils/api';
 const Link = require('react-router-dom').Link;
 import Sidebar from './Sidebar';
-
-// const Sidebar = (props) => {
-//   return (
-//     <div id="current-sidebar">
-//       <div id="title">
-//         <p>More Weather Options</p>
-//       </div>
-//       <br />
-//       <div id="sidebar-body">
-//       <br />
-//         <Link to={{
-//           pathname: '/forecast/' + props.data.name + '/five-day',
-//           search: '?city=' + props.data.name + '&region=' + props.data.sys.country.toLowerCase()
-//         }}>
-//           5 day forecast for {props.data.name}
-//         </Link>
-//         <br />
-//         <br />
-//         <Link to='/'>
-//           return to home screen
-//         </Link>
-        
-//       </div>
-//     </div>
-//   )
-// }
+import img from '../utils/img';
 
 const ForecastContent = (props) => {
   let rise = new Date(props.data.sys.sunrise * 1000).toString().split(' ').slice(4,5);
@@ -42,7 +17,7 @@ const ForecastContent = (props) => {
         pathname: '/forecast/' + props.data.name + '/five-day',
         search: '?city=' + props.data.name + '&region=' + props.data.sys.country.toLowerCase()
       }}>
-        <h1><img src={"../images/weather-icons/" + props.data.weather[0].icon + ".svg"} alt="" /> {props.data.name}</h1>
+        <h1><img src={img[props.data.weather[0].icon]} alt="" /> {props.data.name}</h1>
       </Link>
       <br />
       <p className='data'>{new Date().toString().split(' ').slice(0, 5).join(' ')}</p>
