@@ -10,7 +10,7 @@ const SingleDay = props => {
   console.log(props)
   return (
       <tr>
-        <td><img style={{height: "30px", width: "45px"}}src={"/app/public/images/weather-icons/" + props.data.weather[0].icon + ".svg"} alt=""/></td>
+        <td><img style={{height: "30px", width: "45px"}}src={"../images/weather-icons/" + props.data.weather[0].icon + ".svg"} alt=""/></td>
       <td>{new Date(props.data.dt * 1000).toString().split(' ').slice(0,5).join(' ')}</td>
         <td>{props.data.weather[0].description}</td>
         <td>{Math.round(props.data.main.temp * 1)} °F</td>

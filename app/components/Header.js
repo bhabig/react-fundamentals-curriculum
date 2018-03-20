@@ -7,7 +7,7 @@ const Header = (props) => {
   return (
     <div id="header">
       <div id="img">
-        <img src="/app/public/images/slight_drizzle.png" alt="thermometer" />
+        <img src="../images/slight_drizzle.png" alt="thermometer" />
         <p>What's The Weather?</p>
       </div>
       <div id="p">
