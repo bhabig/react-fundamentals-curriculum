@@ -16,7 +16,7 @@ const propsToLocation = props => {
 }
 
 const getCurrentWeather = (city, stateOrCountry, type) => {
-  return axios.get('http://api.openweathermap.org/data/2.5/' + type + '?q=' + city + ',' + stateOrCountry + '&units=imperial&mode=json&appid=dd2061136e9f5452c98d80151e4c15ae')
+  return axios.get('https://api.openweathermap.org/data/2.5/' + type + '?q=' + city + ',' + stateOrCountry + '&units=imperial&mode=json&appid=' + token)
 }
 
 module.exports = {

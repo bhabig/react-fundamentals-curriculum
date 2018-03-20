@@ -42,7 +42,7 @@ const ForecastContent = (props) => {
         pathname: '/forecast/' + props.data.name + '/five-day',
         search: '?city=' + props.data.name + '&region=' + props.data.sys.country.toLowerCase()
       }}>
-        <h1><img src={"/app/images/weather-icons/" + props.data.weather[0].icon + ".svg"} alt="" /> {props.data.name}</h1>
+        <h1><img src={"/app/public/images/weather-icons/" + props.data.weather[0].icon + ".svg"} alt="" /> {props.data.name}</h1>
       </Link>
       <br />
       <p className='data'>{new Date().toString().split(' ').slice(0, 5).join(' ')}</p>

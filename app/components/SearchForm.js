@@ -62,7 +62,7 @@ export default class SearchForm extends React.Component {
           <input
             id="submit"
             type="image"
-            src="/app/images/mag.png"
+            src="/app/public/images/mag.png"
           />
         </form>
         {/* only redirect when form is submitted somehow */}
