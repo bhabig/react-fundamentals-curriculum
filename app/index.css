@@ -9,6 +9,36 @@ body {
   text-align-last: center;
 }
 
+#five-table {
+  width: 90%;
+  border-collapse: separate;
+  border-spacing: 0;
+  display: block;
+  overflow: auto;
+  table-layout: fixed;
+  color: rgb(232, 234, 240);
+}
+
+#five-table td {
+  padding: 0 15px;
+  white-space: nowrap;
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+#five-table th {
+  padding: 0 15px;
+  white-space: nowrap;
+  background-color: #83A5B3;
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+  font-size: 14px;
+}
+
 ul {
   list-style-type: none;
 }
@@ -68,7 +98,7 @@ ul {
 }
 
 #current-sidebar {
-  width: 22.5%;
+  width: 18.5%;
   display: inline-flex;
   float: left;
   margin-top: 2.5%;
@@ -84,20 +114,39 @@ ul {
 
 #current-sidebar #title {
   font-weight: bold;
-  width: 22.5%;
+  width: 18.5%;
   min-height: 75px;
   position: absolute;
-  font-size: 22.5px;
+  font-size: 20.5px;
   background-color: rgb(70, 78, 85);
-  color: rgb(232, 234, 240);
+  color: #83A5B3;
   border-radius: 10px 10px 0 0;
-  padding-left: 1.5%;
-  padding-right: 1.5%;
-  padding-bottom: 1.5%;
-  padding-top: .75%;
+  padding-left: 0.5%;
+  padding-right: 0.5%;
+  padding-bottom: 0.5%;
+  padding-top: 1%;
   align-content: center;
   border: 2px solid rgb(70, 78, 85);
   vertical-align: middle;
+}
+
+#current-weather a{
+  color: rgb(232, 234, 240);
+  text-decoration: none;
+}
+
+#current-weather a:focus {
+  color: #83A5B3;
+  opacity: .25;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#current-weather a:hover {
+  color: #83A5B3;
+  opacity: .25;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 #current-sidebar a{
@@ -107,11 +156,13 @@ ul {
 
 #current-sidebar a:focus {
   color: #6A94FF;
+  font-weight: bold;
   text-decoration: none;
 }
 
 #current-sidebar a:hover {
   color: #6A94FF;
+  font-weight: bold;
   text-decoration: none;
 }
 /* 
@@ -121,23 +172,24 @@ ul {
 } */
 
 #sidebar-body {
-  width: 22.5%;
+  width: 18.5%;
   min-height: 100px;
   position: absolute;
   color: rgb(70, 78, 85);
   background-color: rgb(232, 234, 240);
   border: 2px solid rgb(70, 78, 85);
   border-radius: 0 0 10px 10px;
-  padding: 1.5%;
+  padding: 0.5%;
   align-content: center;
   margin-top: 75px;
 }
 
 #current-weather {
+  overflow: hidden;
   text-align: center;
   vertical-align: middle;
   float: left;
-  width: 50%;
+  width: 60%;
   height: auto;
   background-color: rgb(70, 78, 85);
   color: rgb(232, 234, 240);
@@ -146,25 +198,36 @@ ul {
   margin-top: 3.5%;
   align-content: center;
   /* display: inline-flex; */
-  margin-right: 10.5%;
+  margin-right: 7.5%;
   margin-bottom: 5%;
 }
 
 #current-weather img {
   height: 125px;
   width: 187.5px;
+  margin-left: -5%;
+  margin-right: 2.5%;
 }
 
 #current-weather h1 {
-  margin-right: 30%;
+  text-align: center;
+  align-content: center;
+  width: 100%;
   font-size: 55px;
-  margin-bottom: 0;
-  padding-bottom: 0;
-  /* margin-right: 55%; */
 }
 
 #current-weather p {
-  font-size: 22px;
+  font-size: 17.5px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#current-weather h3 {
+  color: #83A5B3;
+  text-align: left;
+  float: left;
+  margin-left: 10%;
+  font-size: 17.5px;
 }
 
 #home {
@@ -407,24 +470,28 @@ th {
 } */
 
 table {
-    margin-left: 10%;
-    margin-right: 10%;
+    border-top: 1px solid #83A5B3;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-bottom: 4%;
     border-collapse: collapse;
     width: 80%;
     text-align: left;
+    align-content: flex-start;
 }
 
 th, td {
   text-align: left;
-  align-content: center;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-right: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin: 0 auto;
 }
 
-tr:nth-child(even){
+td {
+  width: 50%;
+}
+
+tr:nth-child(odd){
   background-color: rgb(90, 98, 105);
 }
 
@@ -434,13 +501,28 @@ td:nth-child(odd){
 
 tr {
   margin: 0 auto;
+  width: 100%;
+  align-content: center;
+  text-align: left;
+  padding: 0;
   border-bottom: 1px solid #83A5B3;
 }
 
-thead {
+#thead {
     background-color: #83A5B3;
     border-bottom: 1px solid #83A5B3;
     border-top: 1px solid #83A5B3;
     color: white;
     font-weight: bold;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    padding: 12px;
+}
+
+#thead th {
+  width: 100%;
+  margin: 0;
+  padding: 12px;
 }
